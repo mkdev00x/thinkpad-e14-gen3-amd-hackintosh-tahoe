@@ -1,0 +1,74 @@
+name: Publicar perfil inicial
+
+on:
+  push:
+    branches: [main]
+    paths: ['publicacao-inicial.zip.part-*']
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publicacao-inicial
+  cancel-in-progress: false
+
+jobs:
+  publicar:
+    if: github.repository == 'mkdev00x/thinkpad-e14-gen3-amd-hackintosh-tahoe'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Obter o repositório
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          ref: main
+      - name: Conferir e publicar a árvore revisada
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import hashlib
+          import io
+          import json
+          from pathlib import Path, PurePosixPath
+          import subprocess
+          import zipfile
+
+          parts = [Path('publicacao-inicial.zip.part-01'), Path('publicacao-inicial.zip.part-02')]
+          if not all(p.is_file() for p in parts):
+              raise SystemExit('Os dois volumes da publicação precisam estar no mesmo commit.')
+          data = b''.join(p.read_bytes() for p in parts)
+          expected = '4eb41bc986003a6a88400659313482e51c1f3658860e9cc6f04bbe12d48ae071'
+          if hashlib.sha256(data).hexdigest() != expected:
+              raise SystemExit('SHA-256 do pacote difere da cópia revisada.')
+          roots = {'EFI','docs','profiles','source','scripts','bin','README.md','LICENSE',
+                   'CHANGELOG.md','CONTRIBUTING.md','THIRD_PARTY_NOTICES.md','.gitignore',
+                   'manifesto-publico.json'}
+          written = []
+          with zipfile.ZipFile(io.BytesIO(data)) as archive:
+              entries = archive.infolist()
+              if len(entries) > 10000 or sum(e.file_size for e in entries) > 200_000_000:
+                  raise SystemExit('Dimensões inesperadas do pacote.')
+              for entry in entries:
+                  name = PurePosixPath(entry.filename)
+                  if name.is_absolute() or '..' in name.parts or not name.parts or name.parts[0] not in roots:
+                      raise SystemExit('Caminho inesperado no pacote.')
+                  if '.git' in name.parts or entry.is_dir() or (entry.external_attr >> 16) & 0o170000 == 0o120000:
+                      raise SystemExit('Entrada especial inesperada no pacote.')
+                  path = Path(*name.parts)
+                  path.parent.mkdir(parents=True, exist_ok=True)
+                  path.write_bytes(archive.read(entry))
+                  mode = (entry.external_attr >> 16) & 0o777
+                  path.chmod(0o755 if mode & 0o111 else 0o644)
+                  written.append(str(path))
+          subprocess.run(['python3','scripts/validar-repositorio.py'],check=True)
+          subprocess.run(['git','config','user.name','github-actions[bot]'],check=True)
+          subprocess.run(['git','config','user.email','41898282+github-actions[bot]@users.noreply.github.com'],check=True)
+          subprocess.run(['git','add','--force','--',*written],check=True)
+          for part in parts:
+              part.unlink()
+          subprocess.run(['git','add','--update','--',*map(str,parts)],check=True)
+          subprocess.run(['git','commit','-m','Publicar EFI, fontes reproduzíveis e documentação do ThinkPad E14 Gen 3 AMD'],check=True)
+          subprocess.run(['git','push','origin','HEAD:main'],check=True)
+          print('Perfil revisado publicado e validado.')
+          PY
