@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="340" viewBox="0 0 1200 340" role="img" aria-labelledby="title desc">
+  <title id="title">ThinkPad E14 Gen 3 AMD — macOS Tahoe</title>
+  <desc id="desc">Perfil de referência OpenCore, Ryzen 5 5500U, gráficos e Bluetooth validados.</desc>
+  <defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#15191f"/><stop offset="1" stop-color="#252c37"/></linearGradient></defs>
+  <rect width="1200" height="340" rx="24" fill="url(#bg)"/>
+  <rect x="48" y="48" width="6" height="244" rx="3" fill="#ee3446"/>
+  <text x="80" y="90" fill="#b9c2ce" font-family="system-ui, sans-serif" font-size="18" letter-spacing="4">OPENCORE · PERFIL VALIDADO</text>
+  <text x="78" y="158" fill="#fff" font-family="system-ui, sans-serif" font-size="52" font-weight="700">ThinkPad E14 Gen 3</text>
+  <text x="80" y="203" fill="#e0e6ef" font-family="system-ui, sans-serif" font-size="27">AMD Ryzen 5 5500U · macOS Tahoe</text>
+  <text x="80" y="267" fill="#aebaca" font-family="system-ui, sans-serif" font-size="19">Metal · Chrome · Sublime · Bluetooth · AirPods</text>
+  <g transform="translate(910 83)"><rect width="196" height="130" rx="9" fill="#101318" stroke="#596575" stroke-width="3"/><rect x="12" y="12" width="172" height="105" rx="3" fill="#344257"/><path d="M12 110 Q64 32 101 78 T184 32 V117 H12Z" fill="#586b86"/><path d="M-21 144 H217 L199 157 H-3Z" fill="#8e9aaa"/><circle cx="98" cy="136" r="4" fill="#ee3446"/></g>
+</svg>

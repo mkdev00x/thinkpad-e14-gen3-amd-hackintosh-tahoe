@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-24",
+  "compiled_without_installing": true,
+  "compiler": "Apple clang version 21.0.0 (clang-2100.1.1.101)",
+  "results": {
+    "NootedRed": {
+      "byte_identical": true,
+      "sha256": "a027580b31da29a37a5bd4a62fa64ce65e3aa5140a9ac0f2dbdf0a5fc7209fa1"
+    },
+    "RealtekBluetoothFirmware": {
+      "byte_identical": true,
+      "sha256": "c8b9369857dddd60a65332078ba0bd01577250754d8e813f82913e5624fd4fde"
+    }
+  },
+  "cpu_tests": {
+    "production_wrapper": "passed",
+    "gl_emitter_cases": 65536,
+    "gpu_commands_submitted": false,
+    "cached_patch_normalized_in_local_buffer": false
+  }
+}

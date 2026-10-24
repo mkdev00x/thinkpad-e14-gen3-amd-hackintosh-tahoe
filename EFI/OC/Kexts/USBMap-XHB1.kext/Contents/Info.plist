@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>en</string>
+	<key>CFBundleIdentifier</key>
+	<string>local.eubrdigital.USBMapXHB1</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>USBMap-XHB1</string>
+	<key>CFBundlePackageType</key>
+	<string>KEXT</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0.0</string>
+	<key>CFBundleVersion</key>
+	<string>1.0.0</string>
+	<key>OSBundleRequired</key>
+	<string>Root</string>
+	<key>IOKitPersonalities</key>
+	<dict>
+		<key>ThinkPad-E14-Gen3-AMD-XHB1</key>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.apple.driver.AppleUSBHostMergeProperties</string>
+			<key>IOClass</key>
+			<string>AppleUSBHostMergeProperties</string>
+			<key>IOProviderClass</key>
+			<string>AppleUSBXHCIPCI</string>
+			<key>IONameMatch</key>
+			<string>XHB1</string>
+			<key>model</key>
+			<string>iMac20,1</string>
+			<key>IOProviderMergeProperties</key>
+			<dict>
+				<key>kUSBMuxEnabled</key>
+				<true/>
+				<key>port-count</key>
+				<data>
+				BAAAAA==
+				</data>
+				<key>ports</key>
+				<dict>
+					<key>HS03</key>
+					<dict>
+						<key>UsbConnector</key>
+						<integer>255</integer>
+						<key>port</key>
+						<data>
+						AwAAAA==
+						</data>
+						<key>usb-port-number</key>
+						<data>
+						AwAAAA==
+						</data>
+						<key>usb-port-type</key>
+						<integer>255</integer>
+						<key>Comment</key>
+						<string>Leitor Goodix interno comprovado na coleta atual</string>
+					</dict>
+					<key>HS04</key>
+					<dict>
+						<key>UsbConnector</key>
+						<integer>255</integer>
+						<key>port</key>
+						<data>
+						BAAAAA==
+						</data>
+						<key>usb-port-number</key>
+						<data>
+						BAAAAA==
+						</data>
+						<key>usb-port-type</key>
+						<integer>255</integer>
+						<key>Comment</key>
+						<string>Bluetooth Realtek: topologia exportada e ACPI WLAN@4</string>
+					</dict>
+				</dict>
+				<key>ThinkPadBluetoothUSBMapRevision</key>
+				<integer>1</integer>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

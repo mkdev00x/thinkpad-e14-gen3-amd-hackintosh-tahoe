@@ -1,0 +1,17 @@
+.DS_Store
+._*
+__pycache__/
+*.pyc
+build/
+diagnosticos/
+EFI-private/
+identidade*.json
+identity*.json
+.env
+.env.*
+*.token
+*.key
+*.pem
+*.ips
+*.panic
+xcuserdata/

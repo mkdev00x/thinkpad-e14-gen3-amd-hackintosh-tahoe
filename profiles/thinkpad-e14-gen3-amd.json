@@ -1,0 +1,237 @@
+{
+  "profile": "ThinkPad E14 Gen3 AMD / Ryzen 5 5500U / 25G241",
+  "validated_date": "2026-10-24",
+  "macos_version": "26.7.1",
+  "macos_build": "25G241",
+  "darwin": "25.6.0",
+  "opencore": "1.0.8",
+  "smbios_model": "iMac20,1",
+  "identity_removed": true,
+  "rescue_tool_removed": true,
+  "kexts": [
+    {
+      "bundle": "Lilu.kext",
+      "version": "1.7.2",
+      "id": "as.vit9696.Lilu",
+      "enabled": true
+    },
+    {
+      "bundle": "IOSkywalkFamily.kext",
+      "version": "1.0",
+      "id": "com.apple.iokit.IOSkywalkFamily",
+      "enabled": true
+    },
+    {
+      "bundle": "IO80211FamilyLegacy.kext",
+      "version": "1200.12.2b1",
+      "id": "com.apple.iokit.IO80211FamilyLegacy",
+      "enabled": true
+    },
+    {
+      "bundle": "AMFIPass.kext",
+      "version": "1.4.1",
+      "id": "com.dhinakg.AMFIPass",
+      "enabled": true
+    },
+    {
+      "bundle": "AirPort_RTW89.kext",
+      "version": "0.4.0",
+      "id": "com.rtw89.driver",
+      "enabled": true
+    },
+    {
+      "bundle": "AirPort_RTW89.kext/Contents/PlugIns/AirPortRTW89Front.kext",
+      "version": "0.4.0",
+      "id": "com.rtw89.front",
+      "enabled": true
+    },
+    {
+      "bundle": "VirtualSMC.kext",
+      "version": "1.3.8",
+      "id": "as.vit9696.VirtualSMC",
+      "enabled": true
+    },
+    {
+      "bundle": "SMCBatteryManager.kext",
+      "version": "1.3.8",
+      "id": "ru.usrsse2.SMCBatteryManager",
+      "enabled": true
+    },
+    {
+      "bundle": "ForgedInvariant.kext",
+      "version": "1.5.0",
+      "id": "org.ChefKiss.ForgedInvariant",
+      "enabled": true
+    },
+    {
+      "bundle": "RestrictEvents.kext",
+      "version": "1.1.6",
+      "id": "as.vit9696.RestrictEvents",
+      "enabled": true
+    },
+    {
+      "bundle": "NVMeFix.kext",
+      "version": "1.1.3",
+      "id": "org.acidanthera.NVMeFix",
+      "enabled": true
+    },
+    {
+      "bundle": "NootedRed.kext",
+      "version": "0.9.2",
+      "id": "org.ChefKiss.NootedRed",
+      "enabled": true
+    },
+    {
+      "bundle": "AppleALC.kext",
+      "version": "1.9.8",
+      "id": "as.vit9696.AppleALC",
+      "enabled": true
+    },
+    {
+      "bundle": "SimpleHDA.kext",
+      "version": "1.0.0",
+      "id": "cn.laobamac.SimpleHDA",
+      "enabled": true
+    },
+    {
+      "bundle": "RealtekRTL8111.kext",
+      "version": "3.0.4",
+      "id": "com.insanelymac.RealtekRTL8111",
+      "enabled": true
+    },
+    {
+      "bundle": "VoodooPS2Controller.kext",
+      "version": "2.3.7",
+      "id": "as.acidanthera.voodoo.driver.PS2Controller",
+      "enabled": true
+    },
+    {
+      "bundle": "VoodooPS2Controller.kext/Contents/PlugIns/VoodooInput.kext",
+      "version": "1.1.6",
+      "id": "me.kishorprins.VoodooInput",
+      "enabled": true
+    },
+    {
+      "bundle": "VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Keyboard.kext",
+      "version": "2.3.7",
+      "id": "as.acidanthera.voodoo.driver.PS2Keyboard",
+      "enabled": true
+    },
+    {
+      "bundle": "VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Mouse.kext",
+      "version": "2.3.7",
+      "id": "as.acidanthera.voodoo.driver.PS2Mouse",
+      "enabled": true
+    },
+    {
+      "bundle": "VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Trackpad.kext",
+      "version": "2.3.7",
+      "id": "as.acidanthera.voodoo.driver.PS2Trackpad",
+      "enabled": true
+    },
+    {
+      "bundle": "USBMap-XHB1.kext",
+      "version": "1.0.0",
+      "id": "local.eubrdigital.USBMapXHB1",
+      "enabled": true
+    },
+    {
+      "bundle": "BlueToolFixup.kext",
+      "version": "2.7.2",
+      "id": "as.acidanthera.BlueToolFixup",
+      "enabled": true
+    },
+    {
+      "bundle": "RealtekBluetoothFirmware.kext",
+      "version": "1.0.2",
+      "id": "org.thegwchr.RealtekBluetoothFirmware",
+      "enabled": true
+    }
+  ],
+  "efi_files": {
+    "BOOT/.contentVisibility": "75081b593d15cf6e631971bc6768723f593b88b172477e40ae7d363e4829816d",
+    "BOOT/BOOTx64.efi": "7b26e33bfd84fbc5025fcb16994f7eda3224d15edcfc004d71c8761e08a766fd",
+    "OC/ACPI/SSDT-CPUR.aml": "67a189fcd215ec6961be25223e2262f0d6605426a24db3399c07ed78fd6294dd",
+    "OC/ACPI/SSDT-EC-USBX.aml": "193596f646e3389e2e8d4b8ac8f8cae54ef16903276c93f5c945527a018f21c5",
+    "OC/ACPI/SSDT-PNLF.aml": "c0dc1f86711439f5cab5dc2eb8e1fb3dad1d499f88773c769b2ff23772d10123",
+    "OC/Drivers/OpenHfsPlus.efi": "ad071af5173d840ad9061a6c62b0f6171fd9f1fda7c44cd95705b432dfdfd1cb",
+    "OC/Drivers/OpenRuntime.efi": "cf2df818f7510ca1be321f1ff6481fcbe246c92b16a905ffc5ff654158e05b66",
+    "OC/Kexts/AMFIPass.kext/Contents/Info.plist": "eb3fda04c0e8c8ce0ef4cfc984dcfb771db6aee476d379bd4bc3b7a74a00e4e9",
+    "OC/Kexts/AMFIPass.kext/Contents/MacOS/AMFIPass": "4c35bc196d35c69b5f9dca83fe733801211c7828716f51585c7f5450039ca884",
+    "OC/Kexts/AMFIPass.kext/Contents/_CodeSignature/CodeResources": "6686de10a28a2fe11b36cbb86dcbacc827cfc4ea116b4dabf1845e5aee629e9b",
+    "OC/Kexts/AirPort_RTW89.kext/Contents/Info.plist": "ceb408cd74a71cdc66911077bd43e576d6caf9e786a790cfbb5c61a3b1ff9ebe",
+    "OC/Kexts/AirPort_RTW89.kext/Contents/MacOS/AirPort_RTW89": "f3b34fe8fc69484e37e089f8f46da98463af439410b5b8bafa138d5420881e87",
+    "OC/Kexts/AirPort_RTW89.kext/Contents/PlugIns/AirPortRTW89Front.kext/Contents/Info.plist": "80c9ed430bbdaa9824a096f49cf4b40f50f5e538c5515b81113ea7cb2494fd40",
+    "OC/Kexts/AirPort_RTW89.kext/Contents/PlugIns/AirPortRTW89Front.kext/Contents/MacOS/AirPortRTW89Front": "9f91f8bb3f6cd28298c61833fe53dfb0d90d48d513187f67e903fd3630223e46",
+    "OC/Kexts/AirPort_RTW89.kext/Contents/PlugIns/AirPortRTW89Front.kext/Contents/_CodeSignature/CodeResources": "6686de10a28a2fe11b36cbb86dcbacc827cfc4ea116b4dabf1845e5aee629e9b",
+    "OC/Kexts/AirPort_RTW89.kext/Contents/Resources/COMMIT": "f67c9d470bb95e7c1062d7f66c8beabc8ff3af53e21911d636ed3fdda5f0703b",
+    "OC/Kexts/AirPort_RTW89.kext/Contents/Resources/CREDITS.md": "a591ac01e169e64fd8974771f2280cb354c99b779ac4afe3b2bc1e4fcdfab3ca",
+    "OC/Kexts/AirPort_RTW89.kext/Contents/Resources/LICENCE.rtlwifi_firmware.txt": "a61351665b4f264f6c631364f85b907d8f8f41f8b369533ef4021765f9f3b62e",
+    "OC/Kexts/AirPort_RTW89.kext/Contents/Resources/LICENSE": "8780e78a1a737e127f25a65f6d95269bffd36158dc261114de7859b490bfc5aa",
+    "OC/Kexts/AirPort_RTW89.kext/Contents/_CodeSignature/CodeResources": "6686de10a28a2fe11b36cbb86dcbacc827cfc4ea116b4dabf1845e5aee629e9b",
+    "OC/Kexts/AppleALC.kext/Contents/Info.plist": "55a7b8ff8868f7eba08acda3d7926a28f0a797780fdd73b0e155f157e122b185",
+    "OC/Kexts/AppleALC.kext/Contents/MacOS/AppleALC": "690b96189491b9d6f64aa552da6684714d80ade4ad4ec9027251c3257a2d16e8",
+    "OC/Kexts/BlueToolFixup.kext/Contents/Info.plist": "a0fcdb909add9c5201f1b188f0a8a70ded80a29f29b9b8a74960cc2aff8ed85a",
+    "OC/Kexts/BlueToolFixup.kext/Contents/MacOS/BlueToolFixup": "f9dbbe2b168f207c376c7b7c07dbf60e7dda8b44c2343ae755df550e40b95acc",
+    "OC/Kexts/BlueToolFixup.kext/Contents/_CodeSignature/CodeResources": "6686de10a28a2fe11b36cbb86dcbacc827cfc4ea116b4dabf1845e5aee629e9b",
+    "OC/Kexts/ForgedInvariant.kext/Contents/Info.plist": "dd7f755890aebd6ce938d65f8ba02c4e19bc9bd9f01032e8df22de91efaeb8d4",
+    "OC/Kexts/ForgedInvariant.kext/Contents/MacOS/ForgedInvariant": "328beb1265f1fc0c91053fe0308e953f3890ea588183ef2ba7259032ed539f37",
+    "OC/Kexts/IO80211FamilyLegacy.kext/Contents/Info.plist": "e3db7231dce8d4bb5430785ccb6049ef3e329abbac4f6fcbc878a6a3a0792257",
+    "OC/Kexts/IO80211FamilyLegacy.kext/Contents/MacOS/IO80211FamilyLegacy": "ac2dc15b77f8eaf97b71b34c5d0e1b59f862bfeac618396449306e1837e73894",
+    "OC/Kexts/IOSkywalkFamily.kext/Contents/Info.plist": "ca6a6329f2a69b6b656dcb6913531c904a28b9452cf267e055e1f8276a8a1bd3",
+    "OC/Kexts/IOSkywalkFamily.kext/Contents/MacOS/IOSkywalkFamily": "0484ecd97d1bdb8759aef72661c196cda4309697eea1945a4a3c4d5e6d7e5e5b",
+    "OC/Kexts/IOSkywalkFamily.kext/Contents/_CodeSignature/CodeResources": "6686de10a28a2fe11b36cbb86dcbacc827cfc4ea116b4dabf1845e5aee629e9b",
+    "OC/Kexts/Lilu.kext/Contents/Info.plist": "b7798755a2dda3006783341efa5837444ceda21c7a743651276e1accbb8d4dd3",
+    "OC/Kexts/Lilu.kext/Contents/MacOS/Lilu": "ff98508b40a1eb5fb477029db8886412520f8e39965279ea331c99e3d2e3b274",
+    "OC/Kexts/NVMeFix.kext/Contents/Info.plist": "37c3f3927190728514ea7a352ae3909c23c9c76bb6305cea4d7445fabdb31a30",
+    "OC/Kexts/NVMeFix.kext/Contents/MacOS/NVMeFix": "3e2632eaf09c6cb87e88c5681371e194c53b6653ddbf8693f0bbb1ae42470ef8",
+    "OC/Kexts/NootedRed.kext/Contents/Info.plist": "8f5ddf56774a5e7490319113eb46fedbbe3b020a7c2eb0960113862cc9025343",
+    "OC/Kexts/NootedRed.kext/Contents/MacOS/NootedRed": "a027580b31da29a37a5bd4a62fa64ce65e3aa5140a9ac0f2dbdf0a5fc7209fa1",
+    "OC/Kexts/NootedRed.kext/Contents/_CodeSignature/CodeResources": "6686de10a28a2fe11b36cbb86dcbacc827cfc4ea116b4dabf1845e5aee629e9b",
+    "OC/Kexts/RealtekBluetoothFirmware.kext/Contents/Info.plist": "186a56aa57e656c1f92cf7d1c6c94a681fa3bddc2303a49573783ddf92500424",
+    "OC/Kexts/RealtekBluetoothFirmware.kext/Contents/MacOS/RealtekBluetoothFirmware": "c8b9369857dddd60a65332078ba0bd01577250754d8e813f82913e5624fd4fde",
+    "OC/Kexts/RealtekBluetoothFirmware.kext/Contents/_CodeSignature/CodeResources": "6686de10a28a2fe11b36cbb86dcbacc827cfc4ea116b4dabf1845e5aee629e9b",
+    "OC/Kexts/RealtekRTL8111.kext/Contents/Info.plist": "73df871ead48f89ab2894751e040d91c40c0fc82835933fcc427a9ac4413acfa",
+    "OC/Kexts/RealtekRTL8111.kext/Contents/MacOS/RealtekRTL8111": "a9a99d105518bf2e1905321e35c68d127bb0414bca9ec0d40ad50cc43b55ef16",
+    "OC/Kexts/RealtekRTL8111.kext/Contents/_CodeSignature/CodeResources": "6686de10a28a2fe11b36cbb86dcbacc827cfc4ea116b4dabf1845e5aee629e9b",
+    "OC/Kexts/RestrictEvents.kext/Contents/Info.plist": "1170129a0011df37bf8575084c731a5d490384407c07b7a778d8ec7db0f6ce19",
+    "OC/Kexts/RestrictEvents.kext/Contents/MacOS/RestrictEvents": "16979236f272c0500913882e5347e38d5bad1841ea619fe5a0311e9f768aea4e",
+    "OC/Kexts/SMCBatteryManager.kext/Contents/Info.plist": "99f711358e27a5307f430472360ce99648f850bb0307ed84d7eaa6b014417f26",
+    "OC/Kexts/SMCBatteryManager.kext/Contents/MacOS/SMCBatteryManager": "2f0b3525cd85e803b8247ff959f16e3f434d3b8126328e11086b9c0bfddf9216",
+    "OC/Kexts/SMCBatteryManager.kext/Contents/Resources/SSDT-BATC.dsl": "e66bbd57e5c6ef0ddbc3a6e51f68fe875d84709b73d4772e1c193269f2a89e4b",
+    "OC/Kexts/SimpleHDA.kext/Contents/Info.plist": "b9916b1919a73858de2940c5bb8f39951e92e3c1fb64d84c8cac69dd36c10f92",
+    "OC/Kexts/SimpleHDA.kext/Contents/MacOS/SimpleHDA": "f74c9dbddf43266c97c5f72cd76498bce1d6b5bd3731a947be62f1378b4c7954",
+    "OC/Kexts/USBMap-XHB1.kext/Contents/Info.plist": "a90b5ee9cdd97aadce5d249d97210372358682978a9b71984bffe1d361bfe3b3",
+    "OC/Kexts/VirtualSMC.kext/Contents/Info.plist": "6d3cf2e1ee61a428b3477cb332fbd285eba715ecfceb12a05cc7b3fda2b95f89",
+    "OC/Kexts/VirtualSMC.kext/Contents/MacOS/VirtualSMC": "b55cd581b0127fe1a0ac050a69129ba5012b4547f6a9d1abfa3ad41849a2a246",
+    "OC/Kexts/VoodooPS2Controller.kext/Contents/Info.plist": "8aa06881627cd459cdf293a2903037d2df47548ee5b3c66be179f86375fb3aa7",
+    "OC/Kexts/VoodooPS2Controller.kext/Contents/MacOS/VoodooPS2Controller": "f78d6bf95fb403eccdebf3590015606d5ce4ea73bb78c3f1f20f03ce037b4e24",
+    "OC/Kexts/VoodooPS2Controller.kext/Contents/PlugIns/VoodooInput.kext/Contents/Info.plist": "fd8d708b536ee2fc0937d96d2ec2346d18b61bf18d873ca39234b4257826f9bd",
+    "OC/Kexts/VoodooPS2Controller.kext/Contents/PlugIns/VoodooInput.kext/Contents/MacOS/VoodooInput": "0fc8f18ed84ac3ba5141e19c89e498cc53c05adbb1e29950783071064e59e1f6",
+    "OC/Kexts/VoodooPS2Controller.kext/Contents/PlugIns/VoodooInput.kext/Contents/_CodeSignature/CodeResources": "6686de10a28a2fe11b36cbb86dcbacc827cfc4ea116b4dabf1845e5aee629e9b",
+    "OC/Kexts/VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Keyboard.kext/Contents/Info.plist": "2fc964e03056dbd290df3891f8d105eab9bdd471160db2cdf2b21fdd634fbf87",
+    "OC/Kexts/VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Keyboard.kext/Contents/MacOS/VoodooPS2Keyboard": "b55758219af1b12b1c0e5e116ff1ee65dc5d8484086e5231103c242a5858a1e5",
+    "OC/Kexts/VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Mouse.kext/Contents/Info.plist": "7618e2f0e2fcfa0472fa4b34781920fb478ec55a82e6979d5fc0dcede00f43f7",
+    "OC/Kexts/VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Mouse.kext/Contents/MacOS/VoodooPS2Mouse": "d729d7ba0def0e3c71ded9b4908a1752ac4784c93e631fc7f07fcf7b9fdf89e2",
+    "OC/Kexts/VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Trackpad.kext/Contents/Info.plist": "1ec54c8c364bbd407c772039b33e38e538752b9de84f6320ee5c43050aedd9f0",
+    "OC/Kexts/VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Trackpad.kext/Contents/MacOS/VoodooPS2Trackpad": "718585e226a091298ad1c5a674e53205be30249979838cea1ba18eb298175eb1",
+    "OC/OpenCore.efi": "11ba0b763d765fb82187214d1fa2ee5a9330f851461c12e34d532b7b91097875",
+    "OC/Tools/OpenShell.efi": "15c3b2a0cffecf8865525daa1b590d2605a6c8e093f93019608e750d37db3791",
+    "OC/config.plist": "62ab7118bf0edae44fdae37d5384f5c0ef09a75772086d5ffc35b720886aaf4f"
+  },
+  "validated": {
+    "sublime": true,
+    "chrome": true,
+    "youtube_1080p60": true,
+    "metal_device": true,
+    "bluetooth_on": true,
+    "airpods_pairing": true,
+    "airpods_music": true
+  },
+  "codecs_capability": {
+    "H264": true,
+    "HEVC": true,
+    "VP9": false,
+    "AV1": false
+  }
+}
